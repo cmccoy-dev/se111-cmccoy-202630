@@ -1,0 +1,11 @@
+Notes
+
+Image tag
+
+        <img>
+        src (source)   = "file location blah blah.jpg"    
+        alt = Godzilla: King of the Monsters Poster = image description
+        does not need to be closed
+
+margin = adds 10px between element and those above, below, right, left
+Padding = adds space between elements border and its content all 4 sides
