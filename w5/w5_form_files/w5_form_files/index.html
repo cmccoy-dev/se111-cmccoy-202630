@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cayden McCoy">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+ 
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+ 
+    <form>
+        <table>
+            <tbody>
+                <tr> <!--First Row-->
+                    <td><!--Column One-->
+                        <label for="labels"><b>Labels</b></label>
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <label for="form_feilds"></label><b>Form Fields</b>
+                    </td>
+                </tr> <!--First Row-->
+            
+                <tr> <!--Second Row-->
+                    <td><!--Column One-->
+                        <label for="parent_guardian_name">Parent/Guardian Name</label>
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <textarea name="parent_guardian_name" id="parent_guardian_name" placeholder="First Name"
+                            rows="1" cols="20" maxlength="200" required></textarea>
+ 
+                        <br>
+ 
+                        <textarea name="parent_guardian_name" id="parent_guardian_name" placeholder="Last Name"
+                            rows="1" cols="20" maxlength="200" required></textarea>
+                    </td>
+ 
+                    
+                </tr> <!--Second Row-->
+ 
+                <tr> <!--Third Row-->
+                    <td><!--Column One-->
+                        <label for="childs_first_name">Child's First Name</label> 
+                    </td>
+ 
+                    <td>
+                        <textarea name="childs_first_name" id="childs_first_name" placeholder="Childs First Name"
+                            rows="1" cols="20" maxlength="200" required></textarea>
+                    </td>
+                </tr> <!--Third Row-->
+ 
+                <tr> <!--Fourth Row-->
+                    <td><!--Column One-->
+                        <label for="childs_age">Child's Age</label> 
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <textarea name="childs_age" id="childs_age" placeholder="Childs_age"
+                            rows="1" cols="20" maxlength="200" required></textarea>
+                    </td>
+                </tr> <!--Fourth Row-->
+ 
+                <tr> <!--Fifth Row-->
+                    <td><!--Column One-->
+                        <label for="date_and_time"><b>Date and Time</b></label> 
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <input type="date" name="date" id="date">
+         
+                        <br>
+ 
+                        <input type="time" name="time" id="time">
+                    </td>
+                </tr> <!--Fifth Row-->
+ 
+                <tr> <!--Sixth Row-->
+                    <td><!--Column One-->
+                        <label for="num_guests">Number of Guests</label> 
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <textarea name="num_guests" id="num_guests" placeholder="num_guests"
+                            rows="1" cols="20" maxlength="200" required></textarea>
+                    </td>
+                </tr> <!--Sixth Row-->
+ 
+                <tr> <!--Seventh Row-->
+                    <td><!--Column One-->
+                        <label for="food"><b>Food</b></label> 
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <textarea name="food" id="food" placeholder="Choice of Food"
+                            rows="4" cols="20" maxlength="600" required></textarea>
+                    </td>
+                </tr> <!--Seventh Row-->
+ 
+                <tr> <!--Eighth Row-->
+                    <td><!--Column One-->
+                        <label for="study">Size of Drink</label>
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <input type="radio" name="drink_size" value="sm">Small
+                        
+                        <input type="radio" name="drink_size" value="med">Medium
+                        
+                        <input type="radio" name="drink_size" value="lg">Large
+                    </td>
+ 
+                </tr> <!--Eighth Row-->
+ 
+                <tr> <!--Ninth Row-->
+                    <td><!--Column One-->
+                        <label for="drinks">Select your choice of drink(s)</label>
+                    </td>
+ 
+                    <td><!--Column Two-->
+                        <input type="checkbox" name="drink1" value="coke">Coke<br>
+                        <input type="checkbox" name="drink2" value="sprite">Sprite<br>
+                        <input type="checkbox" name="drink3" value="fruit_punch">Fruit Punch<br>
+                        <input type="checkbox" name="drink4" value="lemonade">Lemonade<br>
+                        <input type="checkbox" name="drink5" value="iced_tea">Iced Tea<br>
+                    </td>
+ 
+                </tr> <!--Ninth Row-->
+ 
+                <tr><!--Tenth Row-->
+                    <td> <!--Column One-->
+                        <label for="cake">Cake</label>
+                    </td>
+ 
+                    <td> <!--Column Two-->
+                        <select name="cake" id="cake">
+                            <option value="chocolate">Chocolate</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="mix">Mix</option>
+                        </select>
+                    </td>
+                </tr><!--Tenth Row-->
+                
+                <tr><!--Eleventh Row-->
+                    <td> <!--Column One-->
+                        <label for="decorations"><b>Decorations</b></label>
+                    </td>
+                   
+                    <td> <!--Column Two-->
+                        <textarea name="decorations" id="decorations" placeholder="Choice of Decorations"></textarea>
+                    </td>
+ 
+                    
+                </tr><!--Eleventh Row-->
+ 
+                <tr><!--Twelfth Row-->
+                    <td> <!--Column One-->
+                        <label for="color_scheme">Color Scheme</label>
+                    </td> <!--Cloumn One-->
+ 
+                    <td> <!--Cloumn Two-->
+                        <input type="color" name="color_scheme" id="color_scheme" value="ffffff">
+                    </td> <!--Cloumn Two-->
+                </tr><!--Twelfth Row-->
+ 
+                <tr><!--Thirteenth Row-->
+                    <td> <!--Column One-->
+                        <label for="additional_comments">Additional Comments</label>
+                    </td> <!--Column Two-->
+ 
+                    <td><!--Column Two-->
+                        <textarea name="additional_comments" id="additional_comments" placeholder="Additional Comments"
+                            rows="5" cols="20" maxlength="600" required></textarea>
+                    </td>
+                </tr><!-- Thirteenth Row-->
+                
+                <tr><!--SUBMIT BUTTON-->
+ 
+                    <!--first column - LABEL -->
+                    <td>
+                        <!--Leave empty for submit button-->
+                    </td>
+ 
+                    <!--second column- INPUT -->
+                    <td>
+                        <input type="submit" value="SUBMIT">
+                    </td>
+ 
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>
