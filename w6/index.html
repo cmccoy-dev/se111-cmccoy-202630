@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="author" content="Cayden McCoy">
+   <meta name="description" content="Week 6 JS Assignment">
+   <title>Week 6 | JS Assignment</title>
+</head>
+
+<body>
+
+   <h1>Week 6 Assignment | Javascript</h1>
+
+   <script>
+
+      var hourlyPay = Number(prompt("Enter your hourly pay rate:"))
+      var hoursWorked = Number(prompt("Enter the total hours worked over the two-week period:"))
+
+      var taxRate = 0.20
+
+      var grossPay = hourlyPay * hoursWorked
+      var unclesSam = grossPay * taxRate
+      var netPay = grossPay - unclesSam
+
+   
+      alert(`Gross Pay: $${grossPay.toFixed(2)}\nUncle Sam's Share: $${unclesSam.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}`)
+
+      // three separate console logs
+      console.log(`Gross Pay: $${grossPay.toFixed(2)}`)
+      console.log(`Uncle Sam's Share: $${unclesSam.toFixed(2)}`)
+      console.log(`Net Pay: $${netPay.toFixed(2)}`)
+
+   </script>
+
+</body>
+</html>
