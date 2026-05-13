@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Cayden McCoy">
+    <title>Week 8 demo</title>
+</head>
+<body>
+    <h1>Wee 8 | JS array and objects</h1>
+
+    <div id="output">
+        <!--We will use JS to wrtie data in here-->
+
+    </div>
+
+    <!--In Doc JS below-->
+    <scrip>
+        //arrays------------------------
+
+        var people = [
+            `Katie`,
+            `Tyler`,
+            `Ethan`        
+        ]
+
+        console.log(`${people}`) //entire dataset
+        console.log(`${people[0]}`) // pme value within the array
+        //arrayName[index] -> name +key = value
+        console.log(`${people.length}`) //array property length
+
+        console.log(`${people[people.length - 1]}`) //last value in array
+
+        var firstperson = people[0] //another option, stores as a varible instead
+
+        // add a person to the array without using index
+        people.push(`array)
+
+
+
+        //objects
+        var person1={
+            first:`Katie`,
+            last:`Truchon`,
+            age:12,
+            pets:true,
+            greeting: function(){
+                alert(`Hello from ${this.first}!`) //"this" references current object
+            }
+            classes:[`se111`, `se126`, `se116`]
+        }
+
+        console.log(`${person1}`) //shows object and all prperties
+        console.dir(person1)
+        console.log(`${person1.frist}`) //shows just one prop
+        person1.car = `Car`
+        console.log (~${person1})
+
+        //processing thoruhg all properties in an object
+        for(let key in person1)
+        {
+            //for each key (property) in the loop
+            console.log(`${key}: ${person1[key]}`)
+
+        }
+
+        alert(`watch what happens next!`)
+        //call the objects function -> accessing an method!
+        person1.greeting()
+
+            var person1={
+            first:`Katie`,
+            last:`Truchon`,
+            age:12,
+            pets:true,
+            greeting: function(){
+                alert(`Hello from ${this.first}!`) //"this" references current object
+            }
+            classes:[`se111`, `se126`, `se116`]
+        }
+
+        for(let key in person1)
+        {
+
+            console.log(`{key}: {person2[key]}`)
+        }
+
+        var humans[
+            person1 
+            person2
+        ]
+
+        for(let 1 = 0; i < humans.lenght; i++)
+        {
+            //this loop control the array data (which objects we are looking at?)
+
+            for(let key in)
+            {
+                
+            }
+
+        }
+    </scrip>
+</body>
+</html>
