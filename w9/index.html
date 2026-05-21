@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Cayden">
+    <title>Week 9 Assignment</title>
+
+    <!--
+    WEEK 9 JAVASCRIPT NOTES!
+
+    console.dir()---selecting with this shows the element in console as an object this is helpful to see children/parent/and node information and array index placement
+    .querySelector()---selects an element within the html needs to be suplied a valid selector (id, class, element type)
+    .children[]---gives access to a child element (element inside the object element; need to include index # in the []
+    .parentElement---gives access to the parent or containing element; similar to ../ in termina file paths
+    .setAttribute()---creates a new attribute and aplies to the element preceding the . needs to be supplied an attribute type and value for said attribute
+    .createElement()---creates an HTML element* needs to be supplied the element/tag type requires appendChild() second step
+    .createTextNode()---creates a text node (text content) so it can be applied to elements 
+    * needs to be supplied text content / string values requires appendChild() second step
+    * needs .appendChild() before it will be added to the page
+    .appendChild()---add an element or text node inside of a pre-exisiting element (container/parent) this will allow for the element/node to be added to the HTML aka appear on page
+    -->
+
+    <style type="text/css">
+        .border { border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <h1>Week 9 demo file</h1>
+
+    <script>
+
+    var people = [
+        {first:"Anakin", last:"Skywalker", credit:"Revenge of the Sith"},
+        {first:"R2", last:"D2", credit:"Revenge of the Sith"},
+        {first:"Obi-Wan", last:"Kenobi", credit:"Revenge of the Sith"},
+        {first:"Padme", last:"Amidala", credit:"Phantom Menace"},
+        {first:"Ashoka", last:"Tano", credit:"The Clone Wars"},
+        {first:"Luke", last:"Skywalker", credit:"The Empire Strikes Back"},
+        {first:"Captain", last:"Rex", credit:"The Clone Wars"}
+    ]
+
+        console.log(people[0])
+        console.log(people[0].first)
+
+        //get the array of infor written to the html document page to be viewed in user
+        //each object's info should have a border, each property value should be in its own paragraph tag
+        
+        var body = document.querySelector(`body`)
+        console.log(body) //see the elemnet and all of its children like standard HTML
+        console.dir(body) // see the element as an object - its base or most "primal" version
+
+        //"OLD VERSION" adding new elements to pagee: body.innerHTML += <div><p........
+        for(let i = 0; i < people.length; i++)
+        {
+            //for every object in the array, do the following:
+            //add a div to hold object data 
+            
+            var tempDiv = document.createElement(`div`)
+            //console.log(tempDiv)
+
+            //add a unique ID and shared class to each of the object DIVS
+            tempDiv.setAttribute(`class`, `border`)
+            tempDiv.setAttribute(`id`, i)
+
+            //access the objects properties - for each paragraph create a <p> with a text node
+            for(let key in people[i])
+            {
+                var p = document.createElement(`p`) //creates a <p> for each property
+                var text = document.createTextNode(people[i][key])  // creates the content found inside of the <p> (p.innerHTML)
+
+                //add the new text node to the new <p>
+                p.appendChild(text)
+                tempDiv.appendChild(p)
+            }//innerloop - access into object
+
+            body.appendChild(tempDiv)
+        }// outter loop - accesses into ARRAY
+
+    </script>
+</body>
+</html>
